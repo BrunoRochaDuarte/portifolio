@@ -1,0 +1,564 @@
+
+/* Estilo Geral DA pagina */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'poppins','sans-serif'
+
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+
+}
+
+.logo img {
+    max-height:55px;
+    width: auto;
+    border-radius: 15px;
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin:0 auto;
+
+}
+
+.flex {
+    display: flex;
+}
+
+ .btn-contato button {
+    padding:10px 40px;
+    font-size: 18px;
+    font-weight:600;
+    background-color:#00FF08;
+    border: 0;
+    border-radius:30px;
+    cursor:pointer;
+    transition: 0.2s;
+}
+
+h2.titulo {
+    color: aliceblue;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00FF08;
+}
+
+/* FIm estilo Geral */
+
+
+/* EStilo do header */
+
+header{
+    padding:40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color:#00FF08;
+    transform: scale(1.25);
+    transition: .3s;
+
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #00ff37;
+    transform: scale(1.05);
+
+}
+
+
+/* Fim estilo do Header */
+
+/* EStilo do topo do site */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+.topo-do-site h1 {
+    color: aliceblue;
+    font-size: 45px;
+    line-height: 40px;
+}
+
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00FF08;
+    font-size:50px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: aliceblue;
+    margin: 40px 0px;
+
+}
+
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    max-width: 350px;
+    border-radius: 20px;
+}
+
+@keyframes flutuar {
+    0%{
+        top:0;
+    }
+    100%{
+        top: 40px;
+    }
+}
+
+
+/* NOSSAS ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px ;
+    margin-top: 25px;
+    border-radius: 20px;
+     flex: 1;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 0 65px rgba(255, 255, 255, 0.566);
+    transition: .4s;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+/* FIM DE  NOSSAS ESPECIALIDADES */
+
+/* SOBRE NÓS */
+section.sobre {
+    padding: 40px 4%;
+    text-align: center;
+}
+section.sobre .flex {
+    gap: 60px;
+}
+
+.sobre .sobre-box {
+     color: white;
+    padding: 40px ;
+    margin-top: 25px;
+    border-radius: 20px;
+    flex: 1;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+
+    /* Destaque do card aqui, quiser remover apaga essa poha toda ai embaixo */
+    background-color: #111; 
+    padding: 30px 20px;
+    margin-top: 25px;
+    border-radius: 20px;   
+}
+
+.sobre .sobre-box img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;  
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.sobre .sobre-box:hover img {
+   transform: scale(1.20) translateY(-6px);
+}
+
+
+.sobre .sobre-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6),
+                0 0 25px rgba(0, 255, 8, 0.2);     
+            
+}
+
+h3.titulo-bruno {
+   color:#fb2828;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3.titulo-carlos {
+   color: #00ff22; 
+    font-size: 24px;
+    text-align: center;
+}
+
+h3.titulo-matheus {
+   color: #0044ff; 
+    font-size: 24px;
+    text-align: center;
+}
+
+
+p.sobre-txt {
+   font-size: 14px;
+    color: #ccc;
+    line-height: 1.5; 
+    margin-top: 15px;
+    margin-bottom:25px;
+    text-align: center;
+}
+
+/*  ALT CARD BRUNO */
+
+h4.facul-bruno {
+     font-size: 14px;
+  font-weight: 700;          
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 8px 0 6px;
+  position: relative;
+  padding-bottom: 10px;    
+  text-align: center;
+  color: #ffffff;             
+    transition: color 0.6s ease; 
+}
+
+.sobre .sobre-box h4.facul-bruno::after {
+
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 38px;
+  height: 5px;
+  border-radius: 3px;
+  opacity: 0.95;
+  background: linear-gradient(90deg, rgba(255,0,0,0.95), rgba(255,0,0,0.25)); 
+    transition: width 1s ease, opacity 1s ease; 
+}
+
+.sobre .sobre-box:hover h4.facul-bruno::after {
+  width: 250px;
+
+}
+.sobre .sobre-box:hover h4.facul-bruno {
+    color:#fb2828; 
+}
+/* Instituição / faculdade */
+.sobre .sobre-box p.instituicao-bruno {
+    font-size: 16px;              
+    color: #bfbfbf;               /* cor neutra padrão */
+    font-weight: 400;             
+    font-style: italic;           
+    letter-spacing: 0.3px;        
+    margin: 4px 0 0;              
+    text-align: center;
+    transition: color 0.4s ease;  /* suaviza a mudança de cor */
+    margin-bottom: 10px;
+}
+
+/* hover no card — muda a cor da faculdade */
+.sobre .sobre-box:hover p.instituicao-bruno {
+    color: #fb2828;     /* vermelho vinho */
+}
+
+
+/* Botao de midias sociaisss */
+
+.sobre-box a.btn-social-bruno {
+   text-align: center;
+    margin: 12px 8px 0;
+    align-items: center;
+  
+}
+
+/*  interno */
+.sobre-box a.btn-social-bruno button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.06); 
+  color: #ffffff;
+  cursor: pointer;
+  transition: .5s
+}
+
+/*  dentro do botão */
+.sobre-box a.btn-social-bruno button i {
+  font-size: 18px;
+  line-height: 1;
+  pointer-events: none; 
+}
+
+
+.sobre-box a.btn-social-bruno:hover button {
+  transform: translateY(-6px) scale(1.06);
+  background: #fb2828; 
+  box-shadow: 0 10px 20px rgba(150, 5, 5, 0.45), 0 0 18px rgba(0,255,8,0.06);
+}
+
+/* FIM MIDIAS SOCIASIII BRUNO */
+
+
+
+/* ALT CARLOS */
+
+
+h4.facul-carlos {
+     font-size: 14px;
+  font-weight: 700;          
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 8px 0 6px;
+  position: relative;
+  padding-bottom: 10px;    
+  text-align: center;
+  color: #ffffff;             
+    transition: color 0.6s ease; 
+}
+
+.sobre .sobre-box h4.facul-carlos::after {
+
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 38px;
+  height: 5px;
+  border-radius: 3px;
+  opacity: 0.95;
+  background: linear-gradient(90deg, #2F9E41, #216a2daa); 
+    transition: width 1s ease, opacity 1s ease; 
+}
+
+.sobre .sobre-box:hover h4.facul-carlos::after {
+  width: 250px;
+
+}
+.sobre .sobre-box:hover h4.facul-carlos {
+    color:#2F9E41
+}
+
+
+
+/* Instituição / faculdade */
+.sobre .sobre-box p.instituicao-carlos {
+    font-size: 16px;              
+    color: #bfbfbf;               /* cor neutra padrão */
+    font-weight: 400;             
+    font-style: italic;           
+    letter-spacing: 0.3px;        
+    margin: 4px 0 0;              
+    text-align: center;
+    transition: color 0.4s ease;  /* suaviza a mudança de cor */
+    margin-bottom: 10px;
+}
+
+/* hover no card — muda a cor da faculdade */
+.sobre .sobre-box:hover p.instituicao-carlos {
+    color: #2F9E41    
+}
+
+/* Botao de midias sociaisss */
+
+.sobre-box a.btn-social-carlos {
+   text-align: center;
+    margin: 12px 8px 0;
+    align-items: center;
+  
+}
+
+/*  interno */
+.sobre-box a.btn-social-carlos button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.06); 
+  color: #ffffff;
+  cursor: pointer;
+  transition: .5s
+}
+
+/*  dentro do botão */
+.sobre-box a.btn-social-carlos button i {
+  font-size: 18px;
+  line-height: 1;
+  pointer-events: none; 
+}
+
+
+.sobre-box a.btn-social-carlos:hover button {
+  transform: translateY(-6px) scale(1.06);
+  background: #2F9E41;
+  box-shadow: 0 10px 20px #055a13, 0 0 18px rgba(0,255,8,0.06);
+}
+
+/* FIM MIDIAS SOCIASIII carlos */
+
+
+
+
+/* ALT MATHEUS */
+
+h4.facul-matheus {
+     font-size: 14px;
+  font-weight: 700;          
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 8px 0 6px;
+  position: relative;
+  padding-bottom: 10px;    
+  text-align: center;
+  color: #ffffff;             
+    transition: color 0.6s ease; 
+}
+
+.sobre .sobre-box h4.facul-matheus::after {
+
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 38px;
+  height: 5px;
+  border-radius: 3px;
+  opacity: 0.95;
+  background: linear-gradient(90deg, #0047B6, #082350); 
+    transition: width 1s ease, opacity 1s ease; 
+}
+
+.sobre .sobre-box:hover h4.facul-matheus::after {
+  width: 250px;
+
+}
+.sobre .sobre-box:hover h4.facul-matheus {
+    color:#0047B6
+}
+
+
+
+/* Instituição / faculdade */
+.sobre .sobre-box p.instituicao-matheus {
+    font-size: 16px;              
+    color: #bfbfbf;               /* cor neutra padrão */
+    font-weight: 400;             
+    font-style: italic;           
+    letter-spacing: 0.3px;        
+    margin: 4px 0 0;              
+    text-align: center;
+    transition: color 0.4s ease;  /* suaviza a mudança de cor */
+    margin-bottom: 10px;
+}
+
+/* hover no card — muda a cor da faculdade */
+.sobre .sobre-box:hover p.instituicao-matheus {
+    color: #0047B6
+}
+
+/* Botao de midias sociaisss */
+
+.sobre-box a.btn-social-matheus {
+   text-align: center;
+    margin: 12px 8px 0;
+    align-items: center;
+  
+}
+
+/*  interno */
+.sobre-box a.btn-social-matheus button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.06); 
+  color: #ffffff;
+  cursor: pointer;
+  transition: .5s
+}
+
+/*  dentro do botão */
+.sobre-box a.btn-social-matheus button i {
+  font-size: 18px;
+  line-height: 1;
+  pointer-events: none; 
+}
+
+
+.sobre-box a.btn-social-matheus:hover button {
+  transform: translateY(-6px) scale(1.06);
+  background: #0047B6;
+  box-shadow: 0 10px 20px #022357, 0 0 18px rgba(0,255,8,0.06);
+}
+
+/* FIM MIDIAS SOCIASIII matheus */
+
+
+/* Fim alt matheus */
+
+
+/* FIM  SOBRE NÓS */
